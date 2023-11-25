@@ -1,9 +1,22 @@
 import React from 'react'
-
+import './CSS/LoginSignup.css'
 const LoginSignup = () => {
   return (
-    <div className='shop-category'>
-
+    <div className='loginsignup'>
+     <div className="loginsignup-container">
+      <h1>Sign Up</h1>
+      <div className="loginsignup-fields">
+        <input type="text" placeholder='Your Nam'/>
+        <input type="text" placeholder='Email Address'/>
+        <input type="password" placeholder='Password' />
+      </div>
+      <button>Continue</button>
+      <p className="loginsignup-login">Already have an count? <span>Login</span></p>
+      <div className="loginsignup-agree">
+        <input type="checkbox" name='' id='' />
+        <p>By continuing, i agree to the term of use & provacy policy.</p>
+      </div>
+     </div>
     </div>
   )
 }
