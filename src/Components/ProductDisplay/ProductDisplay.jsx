@@ -30,8 +30,8 @@ const ProductDisplay = (props) => {
             <p>(122)</p>
         </div>
         <div className="productdisplay-right-prices">
-            <div className="productdisplay-right-price-old">{product.old_price}</div>
-            <div className="productdisplay-right-price-new">{product.new_price}</div>
+            <div className="productdisplay-right-price-old">{product.old_price}đ</div>
+            <div className="productdisplay-right-price-new">{product.new_price}đ</div>
         </div>
         <div className="productdisplay-right-description">
         Gặp được một quyển sách hay nên mua liền dù đọc được hay không đọc được, vì sớm muộn gì cũng cần đến nó

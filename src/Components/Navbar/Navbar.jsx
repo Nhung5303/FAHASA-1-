@@ -1,13 +1,12 @@
 import React, { useContext, useState } from 'react'
 import './Navbar.css'
-
 import logo from '../Assets/1.1.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
 const Navbar = () => {
 
-  const [menu,setMenu]=useState("shop");
+  const [menu,setMenu]=useState("home");
   const {getTotalCartItems} = useContext(ShopContext);
   return (
     <div className="navbar">
@@ -16,10 +15,10 @@ const Navbar = () => {
             <p>FAHASA</p>
         </div>
         <ul className="nav-menu">
-          <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none'}} to='/'>Home</Link>{menu==="shop"?<hr/>:<></>}</li>
-          <li onClick={()=>{setMenu("mens")}}><Link style={{ textDecoration: 'none'}} to='/mens'>Sách Trong Nước </Link>{menu==="mens"?<hr/>:<></>}</li>
-          <li onClick={()=>{setMenu("womens")}}><Link style={{ textDecoration: 'none'}} to='/womens'>Sách Nước Ngoài</Link>{menu==="womens"?<hr/>:<></>}</li>
-          <li onClick={()=>{setMenu("kids")}}><Link style={{ textDecoration: 'none'}} to='/kids'>Truyện Thiếu Nhi</Link>{menu==="kids"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("home")}}><Link style={{ textDecoration: 'none'}} to='/'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("trongnuoc")}}><Link style={{ textDecoration: 'none'}} to='/trongnuoc'>Sách Trong Nước </Link>{menu==="trongnuoc"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("nuocngoai")}}><Link style={{ textDecoration: 'none'}} to='/nuocngoai'>Sách Nước Ngoài</Link>{menu==="nuocngoai"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("thieunhi")}}><Link style={{ textDecoration: 'none'}} to='/thieunhi'>Truyện Thiếu Nhi</Link>{menu==="thieunhi"?<hr/>:<></>}</li>
         </ul>
         <div className="nav-login-cart">
           <Link to='./login'><button>Login</button></Link>

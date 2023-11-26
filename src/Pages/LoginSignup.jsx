@@ -6,12 +6,12 @@ const LoginSignup = () => {
      <div className="loginsignup-container">
       <h1>Sign Up</h1>
       <div className="loginsignup-fields">
-        <input type="text" placeholder='Your Nam'/>
+        <input type="text" placeholder='Your Name'/>
         <input type="text" placeholder='Email Address'/>
         <input type="password" placeholder='Password' />
       </div>
       <button>Continue</button>
-      <p className="loginsignup-login">Already have an count? <span>Login</span></p>
+      <p className="loginsignup-login">Already have an count? <span> Login</span></p>
       <div className="loginsignup-agree">
         <input type="checkbox" name='' id='' />
         <p>By continuing, i agree to the term of use & provacy policy.</p>

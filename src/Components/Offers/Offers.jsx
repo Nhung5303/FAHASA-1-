@@ -8,7 +8,7 @@ const Offers = () => {
       <h1>ƯU ĐÃI</h1>
       <h1>DÀNH CHO BẠN</h1>
       <p>CHỈ NHỮNG SẢN PHẨM MỚI NHẤT</p>
-      <button>Check Now</button>
+      <button>Kiểm tra</button>
      </div>
      <div className="offers-right">
         <img src={exclusive_image} alt="" />
