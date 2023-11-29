@@ -1,16 +1,19 @@
 import React from 'react'
-import './CSS/LoginSignup.css'
+import './CSS/LoginLogin.css'
+import { Link } from 'react-router-dom'
 const LoginLogin = () => {
   return (
-    <div className='loginsignup'>
-     <div className="loginsignup-container">
+    <div className='loginlogin'>
+     <div className="loginlogin-container">
       <h1>Login</h1>
-      <div className="loginsignup-fields">
+      <div className="loginlogin-fields">
         <input type="text" placeholder='Email Address'/>
         <input type="password" placeholder='Password' />
       </div>
       <button>Continue</button>
-      <p className="loginsignup-login">Do you not account? <span>Sign Up</span></p>
+      <p className="loginlogin-login">Do you not account?
+       <Link to="/login">Sign Up</Link>
+       </p>
       </div>
      </div>
   )

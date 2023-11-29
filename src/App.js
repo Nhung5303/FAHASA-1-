@@ -7,10 +7,11 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
+import LoginLogin from './Pages/LoginLogin';
 import Footer from './Components/Footer/Footer';
-import men_banner from './Components/Assets/banner_mens.png'
-import women_banner from './Components/Assets/banner_women.png'
-import kid_banner from './Components/Assets/banner_kids.png'
+import banner_trongnuoc from './Components/Assets/banner_trongnuoc.jpg'
+import banner_nuocngoai from './Components/Assets/banner_nuocngoai.png'
+import banner_thieunhi from './Components/Assets/banner_thieunhi.png'
 function App() {
   return (
     <div>
@@ -18,14 +19,15 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Shop/>}/>
-      <Route path='/trongnuoc' element={<ShopCategory banner={men_banner} category="trongnuoc"/>}/>
-      <Route path='/nuocngoai' element={<ShopCategory banner={women_banner} category="nuocngoai"/>}/>
-      <Route path='/thieunhi' element={<ShopCategory banner={kid_banner} category="thieunhi"/>}/>
+      <Route path='/trongnuoc' element={<ShopCategory banner={banner_trongnuoc} category="trongnuoc"/>}/>
+      <Route path='/nuocngoai' element={<ShopCategory banner={banner_nuocngoai} category="nuocngoai"/>}/>
+      <Route path='/thieunhi' element={<ShopCategory banner={banner_thieunhi} category="thieunhi"/>}/>
       <Route path='/product' element={<Product/>}>
         <Route path=':productId' element={<Product/>}/>
       </Route>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/login' element={<LoginSignup/>}/>
+      <Route path='/LoginLogin' element={<LoginLogin/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
